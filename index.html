@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="css/dycalendar.css">
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- jquery -->
+   <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="main-section">
+         <div class="main-left">
+            <button class="back-btn">
+               <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="left-top">
+               <img src="img/logo.png" alt="" class="logo">
+            </div>
+            <div class="left-bottom">
+               <img src="img/img-1.jpg" alt="" class="img-main">
+               <h3 class="sub-heading">The Verge</h4>
+                  <h1 class="heading-main">30 Minute Meeting</h1>
+                  <h3 class="sub-heading mb-3">
+                     <i class="far fa-clock"></i>
+                     30 min
+                  </h3>
+                  <h3 class="sub-heading mb-3 show-after">
+                     <i class="far fa-calendar"></i>
+                     12:00am - 12:30am, Thursday, February 1, 2024
+                  </h3>
+                  <h3 class="sub-heading show-after">
+                     <i class="fas fa-earth-america"></i>
+                     Pakistan Time
+                  </h3>
+                  <div class="d-flex flex-wrap justify-content-between mt-auto w-100 d-none d-lg-block my-link-parent">
+                     <a href="#" class="my-link">Cookie settings</a>
+                     <a href="#" class="my-link text-dark">Report abuse</a>
+                  </div>
+            </div>
+         </div>
+         <div class="main-right">
+            <h1 class="heading-main">Select a Date & Time</h1>
+            <div class="right-a">
+               <div id="dycalendar" class="dycalendar-container round-edge"></div>
+            </div>
+            <div class="right-b">
+               <h3 class="date-month">Tuesday, March 10</h3>
+               <div class="time-group">
+                  <div class="time-item">
+                     <button class="time-btn">10:30</button>
+                     <button class="move-next">Next</button>
+                  </div>
+                  <div class="time-item">
+                     <button class="time-btn">11:00</button>
+                     <button class="move-next">Next</button>
+                  </div>
+                  <div class="time-item">
+                     <button class="time-btn">11:30</button>
+                     <button class="move-next">Next</button>
+                  </div>
+               </div>
+            </div>
+            <div class="timezone-section">
+               <p class="fw-bold mb-2 mb-md-3">Time zone</p>
+               <div class="dropup dropup-center">
+                  <button class="timezone-btn dropdown-toggle" data-bs-toggle="dropdown">
+                     <i class="fa-solid fa-earth-americas me-2"></i>
+                     <span class="selected-timezone">Pacific Time - US & Caneda (11:46am)</span>
+                  </button>
+                  <div class="dropdown-menu">
+                     <div class="my-dropdown-top">
+                        <input type="text" class="form-control search-box">
+                        <div class="d-flex">
+                           <span class="fw-bold me-auto">TIME ZONE</span>
+                           <div class="d-flex align-items-center">
+                              <span>am/pm</span>
+                              <div class="form-check form-switch ms-2">
+                                 <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                              </div>
+                              <span>24h</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="my-dropdown-bottom">
+                        <div class="timezone-heading">US/Canada</div>
+                        <div class="timezone-item">
+                           <span class="area">Pacific Time - US & Caneda</span>
+                           <span class="time">11:46am</span>
+                        </div>
+                        <div class="timezone-item">
+                           <span class="area">Alaska Time - US & Caneda</span>
+                           <span class="time">10:58am</span>
+                        </div>
+                        <div class="timezone-heading">Asia</div>
+                        <div class="timezone-item">
+                           <span class="area">Dubai Time - US & Caneda</span>
+                           <span class="time">10:58am</span>
+                        </div>
+                        <div class="timezone-item">
+                           <span class="area">Pakistan Time - US & Caneda</span>
+                           <span class="time">10:58am</span>
+                        </div>
+                        <div class="timezone-item">
+                           <span class="area">India Time - US & Caneda</span>
+                           <span class="time">10:58am</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="right-after">
+            <div class="right-after-a">
+               <h1 class="heading-main">Enter Details</h1>
+               <form action="message.html">
+                  <div class="mb-3">
+                     <label for="uname" class="form-label">Name *</label>
+                     <input type="text" class="form-control" id="uname" required>
+                  </div>
+                  <div class="mb-3">
+                     <label for="uemail" class="form-label">Email *</label>
+                     <input type="email" class="form-control" id="uemail" style="margin-bottom: 10px;" required>
+                     <button type="button" class="add-guest-btn">Add Guests</button>
+                  </div>
+                  <div class="mb-3" id="add-guest-box">
+                     <label for="gemail" class="form-label">Guest Email(s)</label>
+                     <input type="email" class="form-control pb-5 mb-2" id="gemail">
+                     <span class="form-text">
+                        Notify up to 10 additional guests of the scheduled event.
+                     </span>
+                  </div>
+                  <div class="mb-3">
+                     <label for="umsg" class="form-label">
+                        Please share anything that will help prepare for our meeting.
+                     </label>
+                     <textarea class="form-control" rows="3" id="umsg"></textarea>
+                  </div>
+                  <p class="small">
+                     By proceeding, you confirm that you have read and agree to <a href="#"
+                        class="form-links">Calendly's Terms of Use</a> and <a href="#" class="form-links">Privacy
+                        Notice</a>.
+                  </p>
+                  <button class="btn btn-primary px-3 py-2 fw-bold rounded-5">Schedule Event</button>
+               </form>
+            </div>
+         </div>
+         <!-- this shown on small screen only -->
+         <div class="d-flex flex-wrap justify-content-between mt-auto w-100 d-block d-lg-none my-link-parent">
+            <a href="#" class="my-link">Cookie settings</a>
+            <a href="#" class="my-link text-dark">Report abuse</a>
+         </div>
+      </div>
+   </div>
+
+
+
+   <!-- script -->
+   <script src="js/dycalendar.js"></script>
+   <script src="js/bootstrap.bundle.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>

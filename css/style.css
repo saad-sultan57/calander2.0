@@ -1,0 +1,464 @@
+body {
+   background-color: #fbfcfd;
+}
+
+
+.main-section {
+   min-width: 900px;
+   max-width: 1060px;
+   min-height: 550px;
+   width: 100%;
+   border: 1px solid rgba(26, 26, 26, 0.1);
+   border-radius: 8px;
+   box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%);
+   margin: 0 auto;
+   margin-top: 66px;
+   margin-bottom: 30px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+/* 
+   main left
+*/
+
+
+
+.main-left {
+   width: 35%;
+   min-width: 300px;
+   border-right: 1px solid rgba(26, 26, 26, 0.1);
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.left-top {
+   height: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom: 1px solid rgba(26, 26, 26, 0.1);
+   padding-top: 25px;
+   padding-bottom: 25px;
+}
+
+.left-top .logo {
+   width: 100%;
+   max-width: 220px;
+   height: auto;
+}
+
+.left-bottom {
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 25px;
+   padding-bottom: 25px;
+}
+
+.left-bottom .heading-main {
+   font-weight: 700;
+   font-size: 28px;
+   color: rgb(26, 26, 26);
+   margin-bottom: 1.5rem;
+}
+
+.left-bottom .sub-heading {
+   color: rgba(26, 26, 26, 0.61);
+   font-weight: 700;
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.left-bottom .sub-heading i {
+   font-size: 21px;
+}
+
+.left-bottom .img-main {
+   width: 65px;
+   height: 65px;
+   border-radius: 50%;
+   margin-bottom: 10px;
+}
+
+.my-link-parent .my-link {
+   text-decoration: none;
+   font-size: 14px;
+}
+
+.my-link-parent .my-link:hover {
+   text-decoration: underline;
+}
+
+
+
+
+/* 
+   main right
+*/
+
+
+
+.main-right {
+   width: 65%;
+   padding-bottom: 25px;
+   padding-top: 25px;
+   padding-left: 30px;
+   padding-right: 30px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+.main-right .heading-main {
+   margin-bottom: 20px;
+   font-weight: 700;
+   font-size: 20px;
+   width: 100%;
+}
+
+.right-a {
+   width: 60%;
+}
+
+#dycalendar{
+   width: 100%;
+   border: 0;
+}
+
+#dycalendar .dycalendar-body table{
+   width: 100%;
+}
+.dycalendar-prev-next-btn{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 38px;
+   height: 38px;
+   border-radius: 50%;
+   color: rgb(0, 105, 255);
+   background-color: rgba(0, 105, 255, 0.065);
+   font-size: 25px;
+   font-weight: 700;
+   font-family: monospace;
+}
+.dycalendar-prev-next-btn:hover {
+   background-color: rgba(0, 105, 255, 0.15);
+}
+.dycalendar-prev-next-btn.prev-btn{
+   left: 20% !important;
+   top: 50% !important;
+   transform: translate(-50%, -50%);
+}
+.dycalendar-prev-next-btn.next-btn{
+   right: 20% !important;
+   top: 50% !important;
+   transform: translate(50%, -50%);
+}
+.dycalendar-target-date {
+   background-color: rgb(0, 105, 255) !important;
+   color: #fff;
+   border-radius: 50% !important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   width: 40px;
+   margin: 0 auto;
+}
+
+
+
+.right-b {
+   width: 40%;
+}
+
+.right-b .date-month {
+   margin-bottom: 25px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 38px;
+}
+
+.right-b .time-group {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.time-group .time-item {
+   display: flex;
+   justify-content: space-between;
+}
+
+.right-b .time-btn {
+   width: 100%;
+   height: 52px;
+   border: 1px solid rgba(0, 105, 255, 0.5);
+   color: rgb(0, 105, 255);
+   background-color: transparent;
+   padding: 13px 10px;
+   border-radius: 4px;
+   font-weight: 700;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: width 0.4s;
+}
+
+.right-b .time-btn:disabled {
+   width: 48.5%;
+   border-color: transparent;
+   background-color: rgb(0 0 0/60%);
+   color: rgba(255, 255, 255, 1);
+}
+
+.right-b .time-btn:hover:not(:disabled) {
+   border: 2px solid rgb(0, 105, 255);
+}
+
+.right-b .move-next {
+   width: 48.5%;
+   height: 52px;
+   border: 1px solid rgba(0, 105, 255, 0.5);
+   background-color: rgb(0, 105, 255);
+   color: #fff;
+   padding: 13px 10px;
+   border-radius: 4px;
+   font-weight: 700;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.4s;
+}
+
+.right-b .move-next:hover {
+   background-color: rgba(0, 102, 230, 1);
+}
+
+
+.timezone-section {
+   width: 100%;
+}
+
+.timezone-btn {
+   padding: 6px 24px 6px 12px;
+   border-radius: 18px;
+   font-size: 14px;
+   background-color: transparent;
+   border: 0;
+   white-space: normal;
+}
+
+.timezone-btn:hover {
+   background-color: rgb(0 0 0/10%);
+}
+
+.dropdown-toggle.timezone-btn::after {
+   rotate: 180deg;
+   vertical-align: 0;
+}
+
+.timezone-section .dropdown-menu {
+   max-width: 400px;
+   width: 100%;
+}
+
+.timezone-section .my-dropdown-top {
+   padding: 1rem 1.5rem;
+   font-size: 12px;
+}
+
+.timezone-section .search-box {
+   margin-bottom: 12px;
+}
+
+.timezone-section .my-dropdown-top .form-switch {
+   font-size: 18px;
+}
+
+.my-dropdown-bottom {
+   max-height: 220px;
+   overflow: auto;
+}
+
+.my-dropdown-bottom .timezone-item {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 8px 16px;
+   color: rgb(26, 26, 26);
+   font-size: 14px;
+}
+
+.my-dropdown-bottom .timezone-item:hover {
+   background: #F2F8FF;
+}
+
+.my-dropdown-bottom .timezone-item.active {
+   background-color: rgb(0, 105, 255);
+   color: #ffffff;
+}
+
+.my-dropdown-bottom .timezone-heading {
+   padding: 8px 10px;
+   font-weight: 700;
+   font-size: 14px;
+   text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+/* 
+   right main after
+*/
+
+
+
+.right-after {
+   width: 65%;
+   padding-bottom: 25px;
+   padding-top: 25px;
+   padding-left: 30px;
+   padding-right: 30px;
+   display: none;
+}
+
+
+.right-after .right-after-a {
+   max-width: 400px;
+}
+
+.right-after .heading-main {
+   margin-bottom: 20px;
+   font-weight: 700;
+   font-size: 20px;
+   width: 100%;
+}
+
+.back-btn {
+   position: absolute;
+   top: 25px;
+   left: 30px;
+   display: none;
+   width: 43px;
+   height: 43px;
+   border: 1px solid rgba(26, 26, 26, 0.1);
+   border-radius: 50%;
+   color: rgb(0, 105, 255);
+   font-size: 24px;
+}
+
+.back-btn:hover {
+   background-color: rgba(0, 105, 255, 0.15);
+}
+
+.left-bottom .sub-heading.show-after {
+   display: none;
+}
+
+.right-after .form-label {
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.right-after .add-guest-btn {
+   padding: 4px 12px;
+   background-color: transparent;
+   border-radius: 40px;
+   font-size: 14px;
+   border: 1px solid rgb(0, 105, 255);
+   color: rgb(0, 105, 255);
+}
+
+.right-after .add-guest-btn:hover {
+   background-color: rgba(0, 105, 255, 0.05);
+}
+
+.form-links {
+   text-decoration: none;
+}
+
+.form-links:hover {
+   text-decoration: underline;
+}
+
+#add-guest-box {
+   display: none;
+}
+
+
+
+
+
+
+/* 
+   msg-section
+*/
+.msg-section {
+   width: 100%;
+   max-width: 450px;
+   margin: 0 auto;
+   padding: 30px 0;
+}
+
+.msg-section .img-main {
+   width: 65px;
+   height: 65px;
+   border-radius: 50%;
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 24px;
+}
+
+.msg-section .heading-main {
+   text-align: center;
+   margin-bottom: 10px;
+   font-size: 28px;
+}
+
+.msg-section .heading-main i {
+   font-size: 21px;
+}
+
+.msg-section .card-title {
+   color: rgb(26, 26, 26);
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+
+.msg-section .card-text {
+   margin-bottom: 12px;
+   font-weight: 700;
+   color: rgba(26, 26, 26, 0.61);
+   font-size: 16px;
+}
+
+.msg-section .card-text i {
+   font-size: 21px;
+   display: inline-block;
+   padding-right: 6px;
+}
+
+.msg-section a{
+   text-decoration: none;
+   position: absolute;
+   bottom: 30px;
+   left: 30px;
+}
+.msg-section a:hover{
+   text-decoration: underline;
+}

@@ -1,0 +1,106 @@
+@media screen and (max-width: 1199px) {
+
+   .main-section {
+      min-width: auto;
+   }
+}
+
+@media screen and (max-width: 991px) {
+
+   .main-left {
+      width: 100%;
+   }
+
+   .main-right {
+      width: 100%;
+   }
+
+   .left-bottom {
+      align-items: center;
+      border-bottom: 1px solid rgba(26, 26, 26, 0.1);
+   }
+
+   .right-after {
+      width: 100%;
+   }
+
+   .right-after .right-after-a {
+      margin: 0 auto;
+   }
+
+   .my-link-parent {
+      padding-bottom: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+   }
+}
+
+
+@media screen and (max-width: 767px) {
+   .right-a {
+      width: 100%;
+   }
+
+   .right-b {
+      width: 100%;
+   }
+
+   .right-b .date-month {
+      margin-bottom: 10px;
+   }
+
+   .timezone-section {
+      padding-top: 16px;
+   }
+}
+
+@media screen and (max-width: 575px) {
+   .main-section {
+      margin-top: 16px;
+      margin-bottom: 16px;
+   }
+
+   .right-a {
+      padding-right: 0;
+   }
+
+   .right-b {
+      padding-left: 0;
+   }
+
+   .main-right {
+      padding-left: 12px;
+      padding-right: 12px;
+   }
+
+   .left-bottom {
+      padding-left: 12px;
+      padding-right: 12px;
+   }
+
+   .left-bottom .heading-main {
+      font-size: 25px;
+      margin-bottom: 15px;
+   }
+
+   .main-left {
+      min-width: auto;
+   }
+
+   .main-right .heading-main {
+      text-align: center;
+      margin-bottom: 15px;
+   }
+
+   .right-after {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+
+   .msg-section {
+      padding: 30px 15px;
+   }
+   .dycalendar-month-container{
+      padding: 0;
+   }
+}
